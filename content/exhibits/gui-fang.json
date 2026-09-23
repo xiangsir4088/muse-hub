@@ -1,0 +1,4 @@
+{ "id": "gui-fang", "name": { "zh": "方座青铜簋", "en": "Square-based Bronze Gui" },
+  "dynasty": { "zh": "西周", "en": "Western Zhou" }, "material": { "zh": "青铜", "en": "Bronze" },
+  "summary": { "zh": "食器兼礼器，方座圆身，双兽首耳。", "en": "A food vessel with square base and beast-head handles." },
+  "model": "models/gui-fang.glb", "procedural": "gui" }
