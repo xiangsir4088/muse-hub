@@ -1,0 +1,4 @@
+{ "id": "xuanhe-lu", "name": { "zh": "宣和仿古铜香炉", "en": "Antiquarian Incense Burner" },
+  "dynasty": { "zh": "宋", "en": "Song" }, "material": { "zh": "铜", "en": "Bronze" },
+  "summary": { "zh": "宋人四雅之焚香。仿古造型，炉身温润。", "en": "A Song scholar's burner for incense, one of the four refined arts." },
+  "model": "models/xuanhe-lu.glb", "procedural": "incense" }
