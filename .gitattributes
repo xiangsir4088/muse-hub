@@ -1,0 +1,11 @@
+# 统一换行符，避免跨平台（Windows / macOS / Linux）克隆时换行混乱
+* text=auto eol=lf
+
+# 二进制资源按二进制处理，不做换行/差异转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.glb binary
+*.gltf binary
+*.webp binary
