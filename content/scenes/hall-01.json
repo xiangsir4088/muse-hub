@@ -1,0 +1,29 @@
+{
+  "id": "hall-01",
+  "name": { "zh": "虚拟文物展陈馆 · 常设展", "en": "Virtual Museum Hall · Permanent" },
+  "floor": { "width": 24, "depth": 16, "height": 5 },
+  "zones": [
+    { "id": "bronze", "name": { "zh": "青铜礼制展区", "en": "Bronze Ritual Zone" }, "color": "#6e5c46", "bounds": { "x": [-12, 0], "z": [-8, 8] } },
+    { "id": "song", "name": { "zh": "宋代雅趣展区", "en": "Song Elegance Zone" }, "color": "#46586e", "bounds": { "x": [0, 12], "z": [-8, 8] } }
+  ],
+  "cases": [
+    { "id": "case-b1", "type": "wall", "position": [-11.2, 0, -3], "rotationY": 90, "size": [8, 2.4, 1.2] },
+    { "id": "case-b2", "type": "freestanding", "position": [-6.5, 0, 3], "rotationY": 0, "size": [2.2, 2.4, 2.2] },
+    { "id": "case-b3", "type": "freestanding", "position": [-6.5, 0, -2], "rotationY": 0, "size": [2.2, 2.4, 2.2] },
+    { "id": "case-pl1", "type": "platform", "position": [0, 0, -4], "rotationY": 0, "size": [3, 1, 3] },
+    { "id": "case-s1", "type": "wall", "position": [11.2, 0, 2], "rotationY": 90, "size": [8, 2.4, 1.2] },
+    { "id": "case-s2", "type": "freestanding", "position": [6.5, 0, 3], "rotationY": 0, "size": [2.2, 2.4, 2.2] },
+    { "id": "case-s3", "type": "freestanding", "position": [6.5, 0, -2], "rotationY": 0, "size": [2.2, 2.4, 2.2] }
+  ],
+  "exhibits": [
+    { "id": "pl-ding", "exhibitRef": "guan-ding", "position": [-6.5, 1.05, 3], "rotation": [0, 0, 0, 1], "zone": "bronze", "caseRef": "case-b2" },
+    { "id": "pl-zhong", "exhibitRef": "bianzhong", "position": [-10.6, 1.05, -1.5], "rotation": [0, 0.707, 0, 0.707], "zone": "bronze", "caseRef": "case-b1" },
+    { "id": "pl-hu", "exhibitRef": "hu-lei", "position": [-10.6, 1.05, -4.5], "rotation": [0, 0, 0, 1], "zone": "bronze", "caseRef": "case-b1" },
+    { "id": "pl-gui", "exhibitRef": "gui-fang", "position": [-6.5, 1.05, -2], "rotation": [0, 0, 0, 1], "zone": "bronze", "caseRef": "case-b3" },
+    { "id": "pl-bi", "exhibitRef": "yu-bi", "position": [0, 1.15, -4], "rotation": [0, 0, 0, 1], "zone": "bronze", "caseRef": "case-pl1" },
+    { "id": "pl-meiping", "exhibitRef": "meiping-qinghua", "position": [6.5, 1.05, 3], "rotation": [0, 0, 0, 1], "zone": "song", "caseRef": "case-s2" },
+    { "id": "pl-wan", "exhibitRef": "yaozhou-wan", "position": [6.5, 1.05, -2], "rotation": [0, 0, 0, 1], "zone": "song", "caseRef": "case-s3" },
+    { "id": "pl-lu", "exhibitRef": "xuanhe-lu", "position": [10.6, 1.05, 2], "rotation": [0, 0.707, 0, 0.707], "zone": "song", "caseRef": "case-s1" }
+  ],
+  "spawn": { "position": [0, 1.6, 6.5], "yaw": 0 }
+}
