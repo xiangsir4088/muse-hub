@@ -1,0 +1,15 @@
+{
+  "id": "song-elegance",
+  "title": { "zh": "宋代雅趣生活", "en": "Song Dynasty Elegance" },
+  "nodes": [
+    { "exhibitId": "meiping-qinghua", "walkTo": [4.4, 3], "lookAt": [6.5, 3], "triggerRadius": 2.5,
+      "audio": { "zh": "meiping-qinghua-zh.mp3", "en": "meiping-qinghua-en.mp3" },
+      "subtitle": { "zh": "梅瓶小口丰肩，原为酒器，入宋后转为陈设。一瓶一花，是宋人书斋的第一清供。", "en": "The meiping's small mouth and broad shoulders once served wine; by the Song it became display furniture — a single plum branch is the first pure ornament of a scholar's studio." } },
+    { "exhibitId": "yaozhou-wan", "walkTo": [4.4, -2], "lookAt": [6.5, -2], "triggerRadius": 2.5,
+      "audio": { "zh": "yaozhou-wan-zh.mp3", "en": "yaozhou-wan-en.mp3" },
+      "subtitle": { "zh": "耀州窑斗笠碗以刻花取胜，刀法在一毫米的胎壁上起伏，所谓入窑一色、出窑万彩。", "en": "Yaozhou conical bowls win by carved decoration, the chisel rippling across a wall one millimetre thick — in the kiln one colour, out of the kiln ten thousand hues." } },
+    { "exhibitId": "xuanhe-lu", "walkTo": [8.4, 2], "lookAt": [10.6, 2], "triggerRadius": 2.5,
+      "audio": { "zh": "xuanhe-lu-zh.mp3", "en": "xuanhe-lu-en.mp3" },
+      "subtitle": { "zh": "焚香、点茶、挂画、插花，宋人四般闲事。宣和炉仿自青铜，铜素无纹，以造型本身为纹。", "en": "Burning incense, whisking tea, hanging paintings, arranging flowers — the four elegant idles of Song life. This censer copies bronze, its plain copper surface letting silhouette itself be the ornament." } }
+  ]
+}
