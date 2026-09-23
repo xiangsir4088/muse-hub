@@ -1,0 +1,7 @@
+{ "id": "yu-bi", "name": { "zh": "谷纹玉璧", "en": "Jade Bi Disc with Grain Pattern" },
+  "dynasty": { "zh": "战国", "en": "Warring States" }, "material": { "zh": "玉", "en": "Jade" },
+  "summary": { "zh": "礼天之器，中孔，满饰谷纹象征丰穰。", "en": "A disc for heaven rites, carved with grain symbols of abundance." },
+  "model": "models/yu-bi.glb", "procedural": "bi",
+  "hotspots": [
+    { "position": [0.55, 0.6, 0.14], "title": { "zh": "谷纹", "en": "Grain Motif" }, "body": { "zh": "璧面满布乳突状谷纹，排列齐整如禾苗初生。", "en": "The disc is carpeted with raised grain dots, neat as seedlings." } }
+  ] }
