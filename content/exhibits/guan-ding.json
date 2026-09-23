@@ -1,0 +1,8 @@
+{ "id": "guan-ding", "name": { "zh": "兽面纹铜鼎", "en": "Beast-Face Bronze Ding" },
+  "dynasty": { "zh": "西周", "en": "Western Zhou" }, "material": { "zh": "青铜", "en": "Bronze" },
+  "summary": { "zh": "圆腹、三足、双立耳，腹饰兽面纹，为礼制重器。", "en": "A round-bellied tripod ding with two loop handles; a ritual vessel of the highest order." },
+  "model": "models/guan-ding.glb", "procedural": "ding",
+  "hotspots": [
+    { "position": [0, 0.06, 0], "title": { "zh": "底款", "en": "Inscription" }, "body": { "zh": "器底铸铭文四字，记王室赏赐之事。", "en": "Four characters cast into the base record a royal grant." } },
+    { "position": [0.5, 0.45, 0.3], "title": { "zh": "兽面纹带", "en": "Taotie Band" }, "body": { "zh": "腹部主纹为兽面纹，以云雷纹为地。", "en": "The body carries a taotie mask over a cloud-and-thunder ground." } }
+  ] }
