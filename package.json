@@ -1,0 +1,42 @@
+{
+  "name": "muse-hub",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "A lightweight, database-free virtual 3D museum hall for cultural artifacts — WebGL first-person roaming, artifact inspection, guided tours and a bilingual UI.",
+  "license": "MIT",
+  "author": "xiangsir4088 <xiangsir@outlook.com>",
+  "keywords": [
+    "threejs",
+    "webgl",
+    "museum",
+    "3d",
+    "virtual-gallery",
+    "react",
+    "vite",
+    "cultural-heritage",
+    "typescript"
+  ],
+  "homepage": "https://github.com/xiangsir4088/muse-hub#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiangsir4088/muse-hub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiangsir4088/muse-hub/issues"
+  },
+  "engines": { "node": ">=20" },
+  "workspaces": ["shared", "server", "web"],
+  "scripts": {
+    "dev": "concurrently -k -n server,web \"npm -w server run dev\" \"npm -w web run dev\"",
+    "build": "npm -w web run build",
+    "start": "npm -w server run start",
+    "test": "vitest run",
+    "typecheck": "tsc -p web/tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}
