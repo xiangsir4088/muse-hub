@@ -1,0 +1,21 @@
+{
+  "id": "bronze-ritual",
+  "title": { "zh": "青铜礼制脉络", "en": "Bronze Ritual Traditions" },
+  "nodes": [
+    { "exhibitId": "guan-ding", "walkTo": [-4.4, 3], "lookAt": [-6.5, 3], "triggerRadius": 2.5,
+      "audio": { "zh": "guan-ding-zh.mp3", "en": "guan-ding-en.mp3" },
+      "subtitle": { "zh": "首先映入眼帘的是兽面纹鼎。鼎原是炊器，自夏商起升格为政权与礼制的象征，天子九鼎、诸侯七鼎，等级森严。", "en": "We begin with the ding tripod. Once a cooking vessel, it was elevated into a symbol of political and ritual authority: nine cauldrons for the Son of Heaven, seven for a duke." } },
+    { "exhibitId": "gui-fang", "walkTo": [-4.4, -2], "lookAt": [-6.5, -2], "triggerRadius": 2.5,
+      "audio": { "zh": "gui-fang-zh.mp3", "en": "gui-fang-en.mp3" },
+      "subtitle": { "zh": "方座簋是西周礼制的典型器。圆簋下方加一方座，天圆地方的宇宙观被铸进了一组食器里。", "en": "The gui with square base epitomises Western Zhou ritual. A square plinth beneath the round vessel casts the cosmology of round heaven and square earth into bronze." } },
+    { "exhibitId": "hu-lei", "walkTo": [-8.4, -4.5], "lookAt": [-10.6, -4.5], "triggerRadius": 2.5,
+      "audio": { "zh": "hu-lei-zh.mp3", "en": "hu-lei-en.mp3" },
+      "subtitle": { "zh": "壶是盛酒之器。投壶之礼，宾主依次向壶中投矢，胜者饮酒——宴饮之中亦有秩序。", "en": "The hu held wine. In the pitch-pot ceremony, guests tossed arrows into the vessel from a set distance; the loser drank. Even banquets obeyed order." } },
+    { "exhibitId": "bianzhong", "walkTo": [-8.4, -1.5], "lookAt": [-10.6, -1.5], "triggerRadius": 2.5,
+      "audio": { "zh": "bianzhong-zh.mp3", "en": "bianzhong-en.mp3" },
+      "subtitle": { "zh": "编钟为礼乐重器。一钟双音，敲击正鼓与侧鼓可得相隔三度的两音，曾侯乙编钟至今音律不衰。", "en": "Bianzhong bells anchor ritual music. Each bell sounds two tones a minor third apart depending on where it is struck — the Marquis Yi ensemble still holds its pitch after 2,400 years." } },
+    { "exhibitId": "yu-bi", "walkTo": [0, -2], "lookAt": [0, -4], "triggerRadius": 2.5,
+      "audio": { "zh": "yu-bi-zh.mp3", "en": "yu-bi-en.mp3" },
+      "subtitle": { "zh": "礼玉之首为璧。以苍璧礼天，璧的中孔象征天穹，是周代玉礼器中等级最高的一件。", "en": "Among ritual jades the bi disc ranks first: used to pay respects to Heaven, its central aperture standing for the vault of the sky." } }
+  ]
+}
