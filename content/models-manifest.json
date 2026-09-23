@@ -1,0 +1,53 @@
+{
+  "$comment": "真实开源文物模型下载清单。执行 node scripts/fetch-models.mjs：有直链的自动下载到 content/models/，url 留空的按 sourceHint 手动下载并以 file 字段命名放入。模型文件就位后刷新浏览器即自动替换程序化占位模型。",
+  "items": [
+    {
+      "exhibitId": "guan-ding",
+      "file": "models/guan-ding.glb",
+      "url": "",
+      "sourceHint": "Smithsonian X 3D (3d.si.edu) 搜索 bronze ding tripod"
+    },
+    {
+      "exhibitId": "bianzhong",
+      "file": "models/bianzhong.glb",
+      "url": "",
+      "sourceHint": "Smithsonian X 3D 搜索 Chinese bell / bianzhong"
+    },
+    {
+      "exhibitId": "hu-lei",
+      "file": "models/hu-lei.glb",
+      "url": "",
+      "sourceHint": "Smithsonian X 3D 搜索 hu vessel"
+    },
+    {
+      "exhibitId": "gui-fang",
+      "file": "models/gui-fang.glb",
+      "url": "",
+      "sourceHint": "NASA 3D Resources / Sketchfab CC0 搜索 gui urn（可先复用 hu-lei 模型改名）"
+    },
+    {
+      "exhibitId": "meiping-qinghua",
+      "file": "models/meiping-qinghua.glb",
+      "url": "",
+      "sourceHint": "Smithsonian X 3D 搜索 meiping vase / Qinghua"
+    },
+    {
+      "exhibitId": "yaozhou-wan",
+      "file": "models/yaozhou-wan.glb",
+      "url": "",
+      "sourceHint": "Sketchfab CC-BY 搜索 yaozhou bowl / song dynasty bowl"
+    },
+    {
+      "exhibitId": "yu-bi",
+      "file": "models/yu-bi.glb",
+      "url": "",
+      "sourceHint": "Smithsonian X 3D 搜索 jade bi disc"
+    },
+    {
+      "exhibitId": "xuanhe-lu",
+      "file": "models/xuanhe-lu.glb",
+      "url": "",
+      "sourceHint": "Sketchfab CC0 搜索 censer incense burner"
+    }
+  ]
+}
