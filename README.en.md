@@ -17,6 +17,8 @@ Features:
 
 > Design specs and iteration plans live in [`docs/superpowers/`](docs/superpowers/).
 
+![MuseHub · Hall overview](docs/screenshots/hall-overview-en.png)
+
 ## Table of contents
 
 - [Prerequisites](#prerequisites)
@@ -101,6 +103,8 @@ Click an artifact → "Inspect":
 - Click the **golden hotspots** for detail captions (title + body, bilingual)
 - Drag the fill-light slider to reveal dark details
 - `Esc` returns you to where you were roaming
+
+![Artifact inspect mode — blue-and-white plum vase](docs/screenshots/artifact-inspect-en.png)
 
 ### Guided tour
 
