@@ -1,0 +1,4 @@
+{ "id": "yaozhou-wan", "name": { "zh": "耀州窑刻花碗", "en": "Yaozhou Carved Bowl" },
+  "dynasty": { "zh": "北宋", "en": "Northern Song" }, "material": { "zh": "瓷", "en": "Porcelain" },
+  "summary": { "zh": "斜刻花纹入釉，刀法犀利，为宋代雅趣代表。", "en": "Deeply carved floral design under olive glaze, a Song-dynasty classic." },
+  "model": "models/yaozhou-wan.glb", "procedural": "bowl" }
