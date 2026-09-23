@@ -1,0 +1,4 @@
+{ "id": "bianzhong", "name": { "zh": "编钟", "en": "Set of Bronze Bells" },
+  "dynasty": { "zh": "春秋", "en": "Spring & Autumn" }, "material": { "zh": "青铜", "en": "Bronze" },
+  "summary": { "zh": "打击乐器，一钟双音，见证礼乐制度。", "en": "Musical bells producing two tones per bell, a witness to ritual music." },
+  "model": "models/bianzhong.glb", "procedural": "bell" }
