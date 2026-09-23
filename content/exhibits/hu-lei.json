@@ -1,0 +1,4 @@
+{ "id": "hu-lei", "name": { "zh": "壶形盛酒器", "en": "Hu Wine Vessel" },
+  "dynasty": { "zh": "商", "en": "Shang" }, "material": { "zh": "青铜", "en": "Bronze" },
+  "summary": { "zh": "长颈鼓腹，用于盛酒，饰雷纹地。", "en": "A long-necked wine vessel decorated with thunder patterns." },
+  "model": "models/hu-lei.glb", "procedural": "hu" }
