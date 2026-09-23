@@ -17,6 +17,8 @@
 
 > 设计规格与迭代计划见 [`docs/superpowers/`](docs/superpowers/)。
 
+![数字博物馆 · 展厅漫游预览](docs/screenshots/hall-overview.png)
+
 ## 目录
 
 - [系统要求](#系统要求)
@@ -101,6 +103,8 @@ npm run start
 - 点击文物上的**金色热点**查看细节讲解（标题 + 正文，中英双语）
 - 拖动「补光」滑块调节辅助光照，看清暗部细节
 - 按 `Esc` 退回漫游时的位置
+
+![文物鉴赏模式 — 青花梅瓶](docs/screenshots/artifact-inspect.png)
 
 ### 智能导览
 
