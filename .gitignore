@@ -1,0 +1,28 @@
+node_modules/
+dist/
+.run/
+*.tmp-*/
+.DS_Store
+scripts/_*.png
+
+# ---- environment / secrets ----
+.env
+.env.*
+!.env.example
+
+# ---- logs ----
+*.log
+npm-debug.log*
+
+# ---- editor & OS ----
+.vscode/
+.idea/
+*.swp
+
+# ---- test / build artifacts ----
+coverage/
+*.tsbuildinfo
+
+# ---- agent / internal tooling (not part of the project) ----
+.workbuddy/
+scripts/_*.mts
