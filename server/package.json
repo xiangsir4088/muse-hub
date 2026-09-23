@@ -1,0 +1,11 @@
+{
+  "name": "@museum/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": { "express": "^4.21.0" },
+  "devDependencies": { "@types/express": "^5.0.0", "tsx": "^4.19.0" }
+}
