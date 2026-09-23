@@ -1,0 +1,8 @@
+{ "id": "meiping-qinghua", "name": { "zh": "青花梅瓶", "en": "Blue-and-white Plum Vase" },
+  "dynasty": { "zh": "宋", "en": "Song" }, "material": { "zh": "瓷", "en": "Porcelain" },
+  "summary": { "zh": "小口短颈丰肩瘦底，存酒器，线条极简。", "en": "A slender-based wine vase of classic plum-vase silhouette." },
+  "model": "models/meiping-qinghua.glb", "procedural": "meiping",
+  "hotspots": [
+    { "position": [0, 1.33, 0.16], "title": { "zh": "口沿", "en": "Rim" }, "body": { "zh": "小口圆唇，唇线一圈青花弦纹。", "en": "A small round lip encircled by a cobalt string band." } },
+    { "position": [0.48, 0.6, 0.1], "title": { "zh": "缠枝纹", "en": "Scroll Pattern" }, "body": { "zh": "肩腹绘缠枝花卉，青料浓处可见铁锈斑。", "en": "Interlocking scrolls sweep the shoulder; the thick cobalt shows rust-coloured spots." } }
+  ] }
