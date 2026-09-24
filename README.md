@@ -19,6 +19,12 @@
 
 ![数字博物馆 · 展厅漫游预览](docs/screenshots/hall-overview.png)
 
+## 操作演示视频
+
+[▶ 真实界面教程视频（91s）](docs/video/muse-hub-live.mp4) — 无头 Chromium 录制的真实运行画面：大厅漫游 → 青花梅瓶鉴赏（四预设视角） → 青铜礼制智能导览 → 中英一键切换，带中文配音与字幕。
+
+<video src="docs/video/muse-hub-live.mp4" controls width="100%"></video>
+
 ## 目录
 
 - [系统要求](#系统要求)
