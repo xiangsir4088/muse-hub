@@ -19,6 +19,12 @@ Features:
 
 ![MuseHub · Hall overview](docs/screenshots/hall-overview-en.png)
 
+## Live Demo Video
+
+[▶ Real-UI tutorial video (91s)](docs/video/muse-hub-live.mp4) — Screen-recorded from the actual running app (headless Chromium): hall roaming → blue-and-white plum vase inspection (4 camera presets) → bronze ritual guided tour → one-click language toggle, with Chinese voiceover and subtitles.
+
+<video src="docs/video/muse-hub-live.mp4" controls width="100%"></video>
+
 ## Table of contents
 
 - [Prerequisites](#prerequisites)
