@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { ExhibitSchema, type Exhibit, type HallLayout, type TourRoute } from '@museum/shared';
 import ViewerPage from './pages/ViewerPage';
 import { UI, type Lang } from './i18n';
+import { asset } from './paths';
 
 interface ContentData {
   layout: HallLayout;
@@ -37,7 +38,7 @@ export default function App() {
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch('/content/scenes/hall-01.json');
+        const res = await fetch(asset('content/scenes/hall-01.json'));
         if (!res.ok) throw new Error(String(res.status));
         const layout = (await res.json()) as HallLayout;
         const exhibitMap = new Map<string, Exhibit>();
@@ -45,7 +46,7 @@ export default function App() {
         let availableModels: Set<string> | undefined;
         await Promise.all([
           ...[...new Set(layout.exhibits.map(p => p.exhibitRef))].map(async ref => {
-            const r = await fetch(`/content/exhibits/${ref}.json`);
+            const r = await fetch(asset(`content/exhibits/${ref}.json`));
             if (!r.ok) return;
             const raw = (await r.json()) as Exhibit;
             // 过一遍 schema：让 .default([]) 之类的缺省真正生效（raw JSON 没有默认值，
@@ -58,24 +59,24 @@ export default function App() {
             }
           }),
           (async () => {
-            const r = await fetch('/content/routes/index.json');
+            const r = await fetch(asset('content/routes/index.json'));
             if (!r.ok) return;
             const { ids } = (await r.json()) as { ids: string[] };
             const loaded = await Promise.all(ids.map(async id => {
-              const r2 = await fetch(`/content/routes/${id}.json`);
+              const r2 = await fetch(asset(`content/routes/${id}.json`));
               return r2.ok ? (await r2.json()) as TourRoute : null;
             }));
             routes.push(...loaded.filter((x): x is TourRoute => x !== null));
           })(),
           (async () => {
             // 优先走 /api/models（有后端时）；失败时退回静态预生成的文件（GitHub Pages 场景）
-            const r = await fetch('/api/models').catch(() => null);
+            const r = await fetch(asset('api/models')).catch(() => null);
             if (r?.ok) {
               availableModels = new Set(((await r.json()) as { models: string[] }).models);
               return;
             }
             try {
-              const sr = await fetch('./api/models.json');
+              const sr = await fetch(asset('api/models.json'));
               if (sr.ok) availableModels = new Set(((await sr.json()) as { models: string[] }).models);
             } catch { /* 忽略，前端会走"先试再降级"逻辑 */ }
           })()
