@@ -22,6 +22,7 @@ import {
   orbitPosition, viewpoint
 } from './inspectCamera';
 import { createTourState, sampleSegment, tourAdvance, yawTowards, type TourState } from './tourPath';
+import { asset } from '../paths';
 
 export interface ViewerOptions {
   canvas: HTMLCanvasElement;
@@ -245,7 +246,7 @@ export class MuseumViewer {
   private async addExhibit(p: Placement) {
     if (this.disposed) return;
     const exhibit = this.opts.exhibits?.get(p.exhibitRef)
-      ?? await fetchJson<Exhibit>(`/content/exhibits/${p.exhibitRef}.json`);
+      ?? await fetchJson<Exhibit>(asset(`content/exhibits/${p.exhibitRef}.json`));
     if (!exhibit || this.disposed) return;
     const model = await loadExhibitModel(exhibit, this.opts.availableModels);
     if (this.disposed) return;
