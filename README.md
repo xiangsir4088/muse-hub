@@ -2,6 +2,12 @@
 
 [English README](README.en.md) | 简体中文
 
+> ### 🔗 在线体验
+>
+> **GitHub Pages（推荐，直接分享）：<https://xiangsir4088.github.io/muse-hub/>**
+>
+> 打开即用，无需安装、无需后端。若需带 Node 后端的完整版：<https://muse-hub-3d-museum.app.workbuddy.host/>
+
 ![Node](https://img.shields.io/badge/node-%E2%89%A520-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Tests](https://img.shields.io/badge/tests-Vitest-orange) ![Stack](https://img.shields.io/badge/stack-Three.js%20%2B%20React%20%2B%20Vite-blue)
 
 **MuseHub（数字博物馆）** 是一个轻量、零数据库、跨终端的虚拟文物展示空间。所有内容以文件形式存放在 `content/` 目录，改完刷新即生效，适合作为博物馆、文博机构或个人收藏的在线 3D 展陈方案。
