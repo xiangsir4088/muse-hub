@@ -1,0 +1,82 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - 'content/**'
+      - 'shared/**'
+      - '.github/workflows/pages.yml'
+  # 允许在 Actions 页面手动触发
+  workflow_dispatch:
+
+# 部署 Pages 需要 github-pages 权限
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# 全局只有 jobs 里的 pages job 能部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build frontend (vite, base: './')
+        run: npx vite build --config web/vite.config.ts
+
+      - name: Generate static api/models.json
+        run: node scripts/build-pages.mjs --no-build 2>/dev/null || node -e "
+          const fs = require('fs'); const path = require('path');
+          const dist = path.join('web','dist');
+          const modelsDir = path.join('content','models');
+          let models = [];
+          try { models = fs.readdirSync(modelsDir).filter(f => f.toLowerCase().endsWith('.glb')).map(f => 'models/'+f).sort(); } catch {}
+          fs.mkdirSync(path.join(dist, 'api'), { recursive: true });
+          fs.writeFileSync(path.join(dist, 'api', 'models.json'), JSON.stringify({ models }, null, 2));
+          // copy content, LICENSE to dist
+          fs.cpSync('content', path.join(dist, 'content'), { recursive: true });
+          fs.cpSync('LICENSE', path.join(dist, 'LICENSE'));
+          fs.cpSync(path.join(dist,'index.html'), path.join(dist,'404.html'));
+          console.log('[pages] static files ready, models:', models.length);
+        "
+
+      - name: Set up Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
