@@ -68,10 +68,16 @@ export default function App() {
             routes.push(...loaded.filter((x): x is TourRoute => x !== null));
           })(),
           (async () => {
-            // 已知的可用模型清单：拿到后就不再对不存在的 glb 打无谓的 404 请求
+            // 优先走 /api/models（有后端时）；失败时退回静态预生成的文件（GitHub Pages 场景）
             const r = await fetch('/api/models').catch(() => null);
-            if (!r?.ok) return;
-            availableModels = new Set(((await r.json()) as { models: string[] }).models);
+            if (r?.ok) {
+              availableModels = new Set(((await r.json()) as { models: string[] }).models);
+              return;
+            }
+            try {
+              const sr = await fetch('./api/models.json');
+              if (sr.ok) availableModels = new Set(((await sr.json()) as { models: string[] }).models);
+            } catch { /* 忽略，前端会走"先试再降级"逻辑 */ }
           })()
         ]);
         setData({ layout, exhibitMap, routes, availableModels });
