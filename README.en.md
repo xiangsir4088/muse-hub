@@ -2,6 +2,12 @@
 
 [中文 README](README.md) | English
 
+> ### 🔗 Live Demo
+>
+> **GitHub Pages (recommended, shareable): <https://xiangsir4088.github.io/muse-hub/>**
+>
+> Opens in the browser — no install, no backend required. Full Node-backed version: <https://muse-hub-3d-museum.app.workbuddy.host/>
+
 ![Node](https://img.shields.io/badge/node-%E2%89%A520-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Tests](https://img.shields.io/badge/tests-Vitest-orange) ![Stack](https://img.shields.io/badge/stack-Three.js%20%2B%20React%20%2B%20Vite-blue)
 
 **MuseHub (数字博物馆)** is a lightweight, database-free virtual exhibit space for cultural artifacts that runs on desktop and mobile. All content lives as files under `content/`: drop in a JSON (and an optional GLB model) and a new artifact goes live on refresh — a ready-made 3D showcase for museums, cultural institutions, or personal collections.
