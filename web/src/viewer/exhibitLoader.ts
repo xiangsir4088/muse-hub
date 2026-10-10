@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import type { Exhibit } from '@museum/shared';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { createArtifact } from './procedural';
+import { asset } from '../paths';
 
 export function decideModelSource(exhibit: Exhibit, availableModels: Set<string>): 'glb' | 'procedural' | 'error' {
   if (availableModels.has(exhibit.model)) return 'glb';
@@ -80,7 +81,7 @@ export async function loadExhibitModel(
   const source = availableModels ? decideModelSource(exhibit, availableModels) : 'glb';
   if (source === 'glb') {
     try {
-      const gltf = await gltfLoader.loadAsync(`/content/${exhibit.model}`);
+      const gltf = await gltfLoader.loadAsync(asset(`content/${exhibit.model}`));
       return wrapFitted(gltf.scene);
     } catch { /* 落到占位分支 */ }
   }
