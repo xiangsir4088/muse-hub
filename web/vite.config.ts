@@ -2,9 +2,10 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import { fileURLToPath } from 'node:url';
 
-// base: './' 让资源路径相对化，GitHub Pages 子路径（/muse-hub/）下也能正常加载
+// base 默认 './'（本地 dev / 根路径部署都可用）；
+// GitHub Pages 子路径构建时用 VITE_BASE=/muse-hub/ 指定绝对基路径
 export default defineConfig({
-  base: './',
+  base: process.env.VITE_BASE || './',
   plugins: [react()],
   resolve: {
     alias: {
